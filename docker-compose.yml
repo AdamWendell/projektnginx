@@ -1,0 +1,10 @@
+nginx:
+  image: 'adamwendell/nginx:latest'
+  links:
+    - web
+  ports:
+    - '80:80'
+web:
+  image: 'adamwendell/projektweb:latest'
+  ports:
+    - '3000'
